@@ -1,0 +1,68 @@
+.mac__list {
+    display: flex;
+}
+
+.mac__item {
+    max-width: 350px;
+    width: 100%;
+}
+
+.mac__item + .mac__item {
+    margin-left: 30px;
+}
+
+.mac__pic {
+    transform: translateX(120px);
+}
+
+.mac__heading {
+    color: #36536B;
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.mac__text {
+    color: #6C8294;
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+@media only screen and (max-width:800px) {
+    .mac {
+        .container {
+            padding: 0;
+            margin-top: 100px;
+        }
+    }
+
+    .mac__item {
+        max-width: 223px;
+    }
+
+    .mac__item + .mac__item {
+        margin-left: 10px;
+    }
+
+    .mac__pic {
+        transform: translateX(60px);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .mac__list {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .mac__text {
+        padding-bottom: 40px;
+    }
+}

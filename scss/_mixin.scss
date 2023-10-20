@@ -1,0 +1,34 @@
+@mixin Flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin Link {
+    color: var(--color-6C8294);
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &:hover {
+        color: var(--color-36536B);
+    }
+}
+
+@mixin btn {
+    color: #FBFCFE;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 14px 12px;
+    border-radius: 24px;
+    background-color: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+
+    &:hover {
+        background-color: var(--color-DA6D97);
+    }
+}

@@ -1,0 +1,110 @@
+.book .container {
+    display: flex;
+}
+
+.book__info {
+    max-width: 445px;
+    width: 100%;
+}
+
+.book__heading {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+    color: #36536B;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+.book__text {
+    margin: 0;
+    padding: 0;
+    color: #6C8294;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.book__pictures {
+    transform: translate(150px, -100px);
+}
+
+.book__pic {
+    margin-left: -90px;
+    position: relative;
+    z-index: 20;
+}
+
+.book__back {
+    background: url("../img/BitmapCopy2.png") no-repeat;
+    width: 390px;
+    height: 780px;
+    position: absolute;
+    z-index: -10;
+    background-size: cover;
+    transform: translate(900px, -300px);
+}
+
+.book__img {
+    max-width: 300px;
+    width: 100%;
+}
+
+@media only screen and (max-width:900px) {
+    .book .container {
+        padding: 0;
+    }
+
+    .book__back {
+        display: none;
+    }
+
+    .book__pictures {
+        display: flex;
+        transform: translate(-250px, 150px);
+        margin: -180px;
+        height: 400px;
+    }
+
+    .book__info {
+        margin-top: 400px;
+        margin-left: 100px;
+    }
+
+    .book__heading {
+        max-width: 573px;
+        text-align: center;
+    }
+
+    .book__text {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .book__pictures {
+        transform: translate(-195px, 150px);
+        margin: -191px;
+        max-width: 391px;
+    }
+
+    .book__info {
+        margin: 0;
+        padding: 0;
+        margin-top: 300px;
+        margin-left: 10px;
+    }
+
+    .book__heading {
+        font-size: 36px;
+    }
+
+    .book__text {
+        font-size: 15px;
+    }
+}
